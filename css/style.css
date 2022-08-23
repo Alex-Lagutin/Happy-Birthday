@@ -241,19 +241,19 @@ img {
 }
 
 .social__link--vk {
-  background-image: url("images/social/vk.svg");
+  background-image: url("./images/social/vk.svg");
 }
 
 .social__link--tg {
-  background-image: url("images/social/telegram.svg");
+  background-image: url("./images/social/telegram.svg");
 }
 
 .social__link--pt {
-  background-image: url("images/social/pinterest.svg");
+  background-image: url("./images/social/pinterest.svg");
 }
 
 .social__link--st {
-  background-image: url("images/social/stumbleupon.svg");
+  background-image: url("./images/social/stumbleupon.svg");
 }
 @media (max-width: 520px) {
   .footer__container {
