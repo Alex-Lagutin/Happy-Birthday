@@ -76,17 +76,39 @@ img {
 }
 
 .header__button-change {
-  background-color: #c300c7;
   border-radius: 30px;
   color: #fff;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  padding: 20px 32px;
+  border: 2px solid transparent;
+  outline: transparent;
+  transition: all 0.6s;
+  width: 300px;
+  height: 64px;
 }
 
 .header__button-change:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 26px;
+}
+
+.header__button-change:focus {
+  border: 2px solid #7235cb;
+}
+
+.header__button-change:hover {
+  opacity: 0.7;
+}
+
+.header__button-change:active {
+  filter: brightness(130%);
+}
+
+.men .header__button-change {
+  background-color: #1178b2;
+}
+.women .header__button-change {
+  background-color: #c300c7;
 }
 
 .header__button-gender {
@@ -99,11 +121,11 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px;
-  transition: transform 0.6s ease-in-out;
+  transition: all 0.6s;
 }
 
 .header__button-gender:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .header__button-gender_man {
@@ -172,10 +194,10 @@ img {
   font-size: max(3em, min(calc(100vw * 3 / 140), 6em));
   line-height: 1.6;
 }
-.women .card__text{
+.women .card__text {
   font-family: "Bad Script";
 }
-.men .card__text{
+.men .card__text {
   font-family: "Open Sans";
   font-weight: 700;
 }
@@ -218,6 +240,13 @@ img {
   line-height: 22px;
   color: #000000;
 }
+.footer__link {
+  transition: all 0.6s;
+  border-bottom: 1px solid transparent;
+}
+.footer__link:hover {
+  border-bottom: 1px solid #000;
+}
 
 .social__list {
   display: flex;
@@ -227,7 +256,9 @@ img {
 .social__item:not(:last-child) {
   margin-right: 16px;
 }
-
+.social__link {
+  transition: transform 0.6s ease-in-out;
+}
 .social__link--vk,
 .social__link--tg,
 .social__link--pt,
@@ -238,6 +269,7 @@ img {
   width: 36px;
   height: 36px;
   display: block;
+  transition: transform 0.6s ease-in-out;
 }
 
 .social__link--vk {
@@ -254,6 +286,36 @@ img {
 
 .social__link--st {
   background-image: url("../images/social/stumbleupon.svg");
+}
+
+.social__link--vk:focus,
+.social__link--tg:focus,
+.social__link--pt:focus,
+.social__link--st:focus {
+  opacity: 0.7;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+.social__link--vk:hover,
+.social__link--tg:hover,
+.social__link--pt:hover,
+.social__link--st:hover {
+  filter: invert(48%) sepia(95%) saturate(1805%) hue-rotate(159deg)
+    brightness(92%) contrast(101%);
+}
+.social__link--vk:active,
+.social__link--tg:active,
+.social__link--pt:active,
+.social__link--st:active {
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+
+.women .social__link {
+  /* background-color: #c300c7; */
+  filter: invert(14%) sepia(93%) saturate(7380%) hue-rotate(296deg)
+    brightness(93%) contrast(108%);
 }
 @media (max-width: 520px) {
   .footer__container {
